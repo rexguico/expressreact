@@ -48,5 +48,7 @@ React-Redux
   - Reselect -> library for memoization for performance
 - mapDispatchToProps
   - what actions should I expose as props?
-  
+
+TODOs
+1. Look at redux-saga for async as an alternative for redux-thunk
 
