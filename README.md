@@ -41,3 +41,12 @@ Reducers
 - must be pure functions -> no sideeffects, no mutation of arguments, no call to non-pure functions
 - all reducers are called on each dispatch
 - follow reducer composition
+
+React-Redux
+- mapStateToProps
+  - what state should I expose as props?
+  - Reselect -> library for memoization for performance
+- mapDispatchToProps
+  - what actions should I expose as props?
+  
+
