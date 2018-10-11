@@ -65,4 +65,13 @@ Testing
   
 TODOs
 1. Look at redux-saga for async as an alternative for redux-thunk
-
+2. Author administration (don't allow deletion on author with a course)
+   Delete course
+   Hide empty course list
+   Unsaved changes message
+   Client-side validation
+   Handle 404's
+   Show # courses in Header
+   Pagination
+   Sort courses table
+   Revert abandoned changes
