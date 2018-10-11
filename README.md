@@ -49,6 +49,17 @@ React-Redux
 - mapDispatchToProps
   - what actions should I expose as props?
 
+Testing
+- mocha but look out for AVA
+- expect for assertions (check also Chai)
+- React Test Utils
+  - shallowRender vs renderIntoDocument
+  - findRenderedDOMComponentWithTag
+  - scryRenderedCOMComponentWithTag
+  - Simulate
+- Enzyme (from airbnb)
+  - uses React Test Utils, JSDOM (in-memory DOM), Cheerio
+
 TODOs
 1. Look at redux-saga for async as an alternative for redux-thunk
 
