@@ -59,7 +59,10 @@ Testing
   - Simulate
 - Enzyme (from airbnb)
   - uses React Test Utils, JSDOM (in-memory DOM), Cheerio
-
+- Mocking
+  - redux-mock-store
+  - nock
+  
 TODOs
 1. Look at redux-saga for async as an alternative for redux-thunk
 
