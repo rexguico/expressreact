@@ -18,6 +18,14 @@ class CoursesPage extends React.Component {
 
     render() {
         const {courses} = this.props;
+
+        let courseList;
+        if (courses !== null && courses.length > 0) {
+            courseList = <CourseList courses={courses} />;
+        } else {
+            courseList = <div></div>;
+        }
+
         return (
             <div>
                 <h1>Courses</h1>
@@ -26,7 +34,7 @@ class CoursesPage extends React.Component {
                     value="Add Course"
                     className="btn btn-primary"
                     onClick={this.redirectToAddCoursePage} />
-                <CourseList courses={courses} />
+                {courseList}
             </div>
         );
     }

@@ -6,7 +6,7 @@ import DeleteCourseForm from './DeleteCourseForm';
 import toastr from 'toastr';
 import { debug } from 'util';
 
-export class DeleteCoursePage extends React.Component {
+class DeleteCoursePage extends React.Component {
     constructor(props, context) {
         super(props, context);
 
