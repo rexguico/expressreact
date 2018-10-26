@@ -34,7 +34,18 @@ export default {
       {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file'},
       {test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000'},
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream'},
-      {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'}
+      {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'},
+      {
+        test: /\.(jpg|png|gif|svg|pdf|ico)$/,
+        use: [
+            {
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name]-[hash:8].[ext]'
+                }
+            }
+        ]
+      }
     ]
   }
 };

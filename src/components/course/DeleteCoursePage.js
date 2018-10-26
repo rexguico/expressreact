@@ -4,7 +4,6 @@ import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
 import DeleteCourseForm from './DeleteCourseForm';
 import toastr from 'toastr';
-import { debug } from 'util';
 
 class DeleteCoursePage extends React.Component {
     constructor(props, context) {
